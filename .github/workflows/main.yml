@@ -34,6 +34,7 @@ jobs:
     - run: flutter test
     - run: flutter build apk
     - run: flutter build appbundle
+    - run: flutter build ios --no-codesign
         # Upload generated apk to the artifacts.
     - uses: actions/upload-artifact@v1
       with:
